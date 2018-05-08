@@ -11,6 +11,7 @@ TagManager:
   - Goal
   - player
   - change
+  - downstreet
   layers:
   - Default
   - TransparentFX
