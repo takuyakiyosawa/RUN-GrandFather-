@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - High
+  - Low
+  - barrier
+  - goal
+  - Goal
+  - player
+  - change
   layers:
   - Default
   - TransparentFX
