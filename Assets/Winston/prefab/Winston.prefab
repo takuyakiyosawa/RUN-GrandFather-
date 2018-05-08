@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 95000013231271488}
   m_Layer: 0
   m_Name: Winston
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4590,7 +4590,7 @@ Animator:
   m_GameObject: {fileID: 1000011396496454}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8bf4ca6f6f02d554e9cbb663d10ef7a4, type: 3}
-  m_Controller: {fileID: 9100000, guid: 5fe7176418c7b4474b0a853bb71dcb88, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
