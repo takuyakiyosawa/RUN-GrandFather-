@@ -12,6 +12,7 @@ TagManager:
   - player
   - change
   - downstreet
+  - upstreet
   layers:
   - Default
   - TransparentFX

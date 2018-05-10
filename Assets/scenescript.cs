@@ -8,6 +8,9 @@ public class scenescript : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.CompareTag ("downstreet")) {
 			SceneManager.LoadScene ("green");
+			if (col.gameObject.CompareTag ("upstreet")) {
+				SceneManager.LoadScene ("blue");
+			}
 		}
 	}
 }
