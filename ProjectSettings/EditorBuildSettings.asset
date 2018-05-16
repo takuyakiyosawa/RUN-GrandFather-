@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/scene/Title.unity
+    guid: 175c82f9419d4e344b6190c1835c4c0d
+  - enabled: 1
     path: Assets/scene/maedannkai.unity
     guid: cbd3d8443cf9c0f4289ef085498574da
   - enabled: 1
     path: Assets/scene/green.unity
     guid: e050579917faa9641a4044294fa8784f
+  - enabled: 1
+    path: Assets/scene/blue.unity
+    guid: 6a32d20f089d59d4085964e34db5adfe

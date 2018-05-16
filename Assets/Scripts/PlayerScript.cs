@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour {
 
     // ここから
-    public float speed = 5.0f;
+    public float speed = 4.5f;
     public float slideSpeed = 2.0f;
 
 
