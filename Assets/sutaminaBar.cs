@@ -7,7 +7,6 @@ public class sutaminaBar : MonoBehaviour {
 	public Slider slider;
 	Animator animator;
 	UIScript uiscript;
-
 	float sutamina = 1;
 
 	// Use this for initialization
@@ -30,8 +29,11 @@ public class sutaminaBar : MonoBehaviour {
 		if (sutamina < 0) {
 			speed = 0;
 			animator.SetBool ("DEAD", true);
-			uiscript.Gameover();
+			uiscript.Gameover ();
 			Debug.Log ("taoreta");
+		}
+		if (sutamina > 1) {
+			sutamina = 1;
 		}
 		Debug.Log (sutamina);
 

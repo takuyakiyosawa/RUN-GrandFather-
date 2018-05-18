@@ -13,6 +13,8 @@ TagManager:
   - change
   - downstreet
   - upstreet
+  - Fire
+  - Item
   layers:
   - Default
   - TransparentFX

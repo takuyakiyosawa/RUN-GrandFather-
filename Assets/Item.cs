@@ -4,16 +4,12 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour {
 	public Slider slider;
-	float sutamina = 1;
-
+	int sutamina = 0;
 	void OnTriggerEnter (Collider hit){
-
+		
 		if (hit.CompareTag ("player")) {
-
+			sutamina = sutamina + 1;
 			Destroy (gameObject);
-		}
-		if (hit.CompareTag ("player")) {
-			sutamina = 1;
 		}
 	}
 	// Use this for initialization

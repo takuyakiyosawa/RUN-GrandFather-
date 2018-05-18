@@ -11,10 +11,10 @@ public class Maincamera : MonoBehaviour {
 	void Start () {
 		cam = Camera.main;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		mainCamera.transform.position = new Vector3(4.8f,2.2f,player.transform.position.z);
+		mainCamera.transform.position = new Vector3(4.8f,player.transform.position.y+2.2f,player.transform.position.z);
 
 		}
 }

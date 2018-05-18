@@ -1,6 +1,4 @@
-﻿
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -10,6 +8,7 @@ public class PlayerScript : MonoBehaviour {
     public float speed = 4.5f;
     public float slideSpeed = 2.0f;
 
+	public static int sutamina = 0;
 
 	Animator animator;
 	UIScript uiscript;
@@ -58,6 +57,7 @@ public class PlayerScript : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.DownArrow)) {
 			animator.SetBool ("SLIDE", false);
 		}
+		Debug.Log (sutamina);
 	}
 		
 	// Triggerである障害物にぶつかったとき
@@ -93,5 +93,5 @@ public class PlayerScript : MonoBehaviour {
 			// UI
 			uiscript.Goal();
 		}
-	}
+}
 }
