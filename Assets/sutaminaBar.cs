@@ -7,7 +7,6 @@ public class sutaminaBar : MonoBehaviour {
 	public Slider slider;
 	Animator animator;
 	UIScript uiscript;
-	float sutamina = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -19,26 +18,26 @@ public class sutaminaBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Space)) {
-			sutamina = sutamina + (Time.deltaTime / 2);
+			PlayerScript.sutamina = PlayerScript.sutamina + (Time.deltaTime / 2);
 		}
 		//スタミナが０以上の時
-		if (sutamina > 0) {
+		if (PlayerScript.sutamina > 0) {
 			//スタミナが徐々に減る
-			sutamina = sutamina - (Time.deltaTime / 10);
+			PlayerScript.sutamina = PlayerScript.sutamina - (Time.deltaTime / 15);
 		}
-		if (sutamina < 0) {
+		if (PlayerScript.sutamina < 0) {
 			speed = 0;
 			animator.SetBool ("DEAD", true);
 			uiscript.Gameover ();
 			Debug.Log ("taoreta");
 		}
-		if (sutamina > 1) {
-			sutamina = 1;
+		if (PlayerScript.sutamina > 1) {
+			PlayerScript.sutamina = 1;
 		}
-		Debug.Log (sutamina);
+		Debug.Log (PlayerScript.sutamina);
 
 		//スタミナとvalueをつなげる
 		//スタミナをスライダーに反映させる処理
-		slider.value = sutamina;
+		slider.value = PlayerScript.sutamina;
 	}
 }

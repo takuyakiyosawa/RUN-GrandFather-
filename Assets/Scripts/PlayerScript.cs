@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour {
     public float speed = 4.5f;
     public float slideSpeed = 2.0f;
 
-	public static int sutamina = 0;
+	public static float sutamina = 1;
 
 	Animator animator;
 	UIScript uiscript;
@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour {
         //ここから
         transform.position += Vector3.forward * speed * Time.deltaTime;
         float pos_x = transform.position.x;
-        if (Input.GetKey (KeyCode.LeftArrow)){
+        /*if (Input.GetKey (KeyCode.LeftArrow)){
             if (pos_x > -1.9f) {
 				transform.position += Vector3.left * slideSpeed * Time.deltaTime;
 			}
@@ -33,7 +33,7 @@ public class PlayerScript : MonoBehaviour {
             if (pos_x < 1.9f) {
 				transform.position += Vector3.right * slideSpeed * Time.deltaTime;
 			}
-		}
+		}*/
 
 
 		//アニメーションについて(いじらない)

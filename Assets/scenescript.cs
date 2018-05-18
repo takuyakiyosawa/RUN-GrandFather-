@@ -8,7 +8,7 @@ public class scenescript : MonoBehaviour {
 	void Update(){
 
 		if (Input.GetMouseButtonDown (0)) {
-			SceneManager.LoadScene ("maedannkai");
+			
 		}
 	}
 	void OnCollisionEnter(Collision col){
@@ -16,10 +16,20 @@ public class scenescript : MonoBehaviour {
 			SceneManager.LoadScene ("blue");
 			if (col.gameObject.CompareTag ("upstreet")) {
 				SceneManager.LoadScene ("green");
-				if (col.gameObject.CompareTag ("hospital")) {
+				if (col.gameObject.CompareTag ("Goal")) {
 					SceneManager.LoadScene ("black");
+				}
+
 			}
 		}
 	}
+
+	public void TitleScene(){
+		SceneManager.LoadScene ("Title");
+	}
+
+	public void MaeScene(){
+		SceneManager.LoadScene ("maedannkai");
+	}
 }
-}
+

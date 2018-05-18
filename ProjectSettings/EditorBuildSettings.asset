@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scene/blue.unity
     guid: 6a32d20f089d59d4085964e34db5adfe
+  - enabled: 1
+    path: Assets/scene/black.unity
+    guid: e276945a3d0b4dc449643bc6f37f1934

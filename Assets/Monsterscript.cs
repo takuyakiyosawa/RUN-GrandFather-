@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class Monsterscript : MonoBehaviour {
 
 	public GameObject target;
 
 	// Use this for initialization
-	void Start () {
-
+	void Update () {
+		NavMeshAgent agent = GetComponent<NavMeshAgent> ();
+		agent.speed = 4;
+		agent.destination = target.transform.position;
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
